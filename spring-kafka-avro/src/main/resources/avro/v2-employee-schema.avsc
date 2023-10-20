@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "schemaVersion": 2,
+  "name": "Employee",
+  "namespace": "com.alex.springkafkaavro.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "firstName",
+      "type": "string"
+    },
+    {
+      "name": "lastName",
+      "type": "string"
+    },
+    {
+      "name": "address",
+      "type": "string"
+    }
+  ]
+}
