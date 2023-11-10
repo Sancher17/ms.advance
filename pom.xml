@@ -18,6 +18,7 @@
     <modules>
         <module>grpc-spring</module>
         <module>spring-config</module>
+        <module>spring_auth</module>
     </modules>
 
     <properties>
