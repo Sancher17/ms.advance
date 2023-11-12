@@ -1,23 +1,34 @@
 package com.alex.rest;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class AuthController {
 
     @GetMapping("/info")
     public String info() {
-        return "My application";
+        return "info";
     }
 
     @GetMapping("/about")
     public String about() {
-        return "All about us";
+        return "about";
     }
 
     @GetMapping("/admin")
     public String admin() {
-        return "I am admin";
+        return "admin";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/logoutSuccess")
+    public String logout() {
+        return "logout";
     }
 }

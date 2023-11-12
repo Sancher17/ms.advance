@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logout</title>
+    <title>403 Forbidden</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,36 +17,28 @@
             height: 100vh;
         }
 
-        .logout-container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
+        .error-container {
             text-align: center;
         }
 
-        h2 {
-            color: #28a745;
+        h1 {
+            color: #e44d26;
+            font-size: 5em;
+            margin: 0;
         }
 
         p {
-            margin-top: 10px;
             color: #343a40;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-<div class="logout-container">
-    <h2>Logout Successful</h2>
-    <p>You have been successfully logged out.</p>
-    <p><a href="/">Return to Home Page</a></p>
+<div th:insert="fragments/header::header"></div>
+<div class="error-container">
+    <h1>403</h1>
+    <p>Forbidden - You don't have permission to access this resource.</p>
 </div>
 </body>
 </html>
